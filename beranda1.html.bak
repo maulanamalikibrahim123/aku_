@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> MAULANA MALIK IBRAHIM </title>
+			<meta charset="utf-8">
+		</head>
+		
+		<body>
+			<div class="header">
+				<div class="anak-header">
+					<img src="pou.png" width="70" height="70" id="logo">
+					<ul>
+						<li><a href="home">home</a></li>
+						<li><a href="home">biografi</a></li>
+						<li><a href="home">organisasi</a></li>
+					</ul>	
+				</div>
+				
+				<div class="content">
+					<h1>maulana malik ibrahim</h1>
+					<div>
+						<button><span></span><a href>home</a></button>
+						<button><span></span><a href>suscribe</a></button>
+						
+				</div>
+			</div>
+			<style>
+				*{
+					margin: 0;
+					padding: 0;
+					
+				}
+				.header{
+					width: 100%;
+					height: 100vh;
+					background-position: center;
+					background-size: cover;
+					background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(aku.jpg);
+				}
+				.anak-header{
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					transform: translateY(20px) translate(50px);
+					
+				}
+				.anak-header ul li{
+					list-style: none;
+					display: inline-block;
+					transform: translateX(-100px);
+					text-transform: uppercase;
+					position: relative;
+				}
+				.anak-header ul li::after{
+					content: '';
+					height: 3px;
+					width: 0;
+					background: #009688;
+					position: absolute;
+					left: 0;
+					bottom: -10px;
+					transition: 0.5s;
+				}
+				.anak-header ul li:hover:after{
+					width: 100%;
+				}
+				#logo{
+					transform: translateX(20px);
+				}
+				.anak-header ul li a{
+					text-decoration: none;
+					color: #fff;
+					font-size: 15px;
+					margin: 0 15px;
+				}
+				.content{
+					transform: translateY(-50%);
+					position: absolute;
+					top : 70%;
+					left: 35%;
+					text-align: center;
+				}
+				.content h1{
+					color: #fff;
+					text-transform: uppercase;
+				}
+				button{
+					border-radius: 25px;
+					padding: 15px 0;
+					border: 2px solid #009688; 
+					width: 200px;
+					margin: 20px 10px;
+					color: #fff;
+					background: transparent;
+					font-size: 20px;
+					font-weight: bold;
+					text-transform: uppercase;
+					cursor: pointer;
+					position: relative;
+					overflow: hidden; 
+					
+				}
+				span{
+					width: 0;
+					height: 100%;
+					background: #009688;
+					border-radius: 20px;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transition: 0.5s;
+					z-index: -1;
+				}
+				button:hover span{
+					width: 100%;
+				}
+				button:hover{
+					border: none;
+				}
+				.content a{
+					text-decoration: none;
+					color: #fff;
+				}
+				
+			</style>
+			
+		</body>
+	</html>

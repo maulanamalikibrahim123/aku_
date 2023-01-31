@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title> AKU BAH </title>
+			<meta charset="utf-8">
+		</head>
+		
+		<body>
+			<div class="content-header">
+				<div class="header">
+					<img src="../images/pou.png" class="logo" width="30" height="30">
+					<img src="../images/menu.png" class="menu" width="40" height="40" onclick="openmenu()">
+					<div class="menu-box" id="menu30">
+						<div class="kanan">
+							<div class="get"><a href="#"> get started </a></div>
+							<img src="../images/close.png" width="35" onclick="closemenu()" height="35" class="close">
+						</div>
+						<div class="kiri">
+							<a href="#">Beranda</a>
+							<a href="#">Biografi</a>
+							<a href="#">Organisasi</a>
+						</div>
+					</div>
+				</div>
+				<div class="content-middle">
+					<h1>maulana malik ibrahim</h1>
+					<button class="button" onclick="openmenu()"><span></span>MENU</button>
+					<button class="button"><span></span> SUSCRIBE </button>
+				</div>
+			</div>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			box-sizing: border-box;
+		}
+		.content-header{
+			background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(aku.jpg);
+			height: 100vh;
+			width: 100%;
+			background-position: center;
+			background-size: cover;
+		}
+		.header{
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.logo{
+			margin: 20px 15px;
+		}
+		.menu{
+			margin-right: 15px;
+			cursor: pointer;
+		}
+		.menu-box{
+			background: grey;
+			color: white;
+			height: 50vh;
+			width: 30%;
+			position: absolute;
+			top: -380px;
+			right: 30px;
+		}
+		.kanan{
+			position: absolute;
+			top: 15px;
+			right: 10px;
+		}
+		.close{
+			cursor: pointer;
+		}
+		.get{
+			background: red;
+			color: white;
+			width: 170px;
+			
+			position: absolute;
+			top: 5px;
+			right: 40px;
+			align-items: center;
+			padding: 5px 25px;
+			border-radius: 20px;
+			text-align: center;
+		}
+		.get a{
+			font-size: 15px;
+			text-decoration: none;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.get:hover{
+			font-weight: bold;
+		}
+		.kiri{
+			position: absolute;
+			top: 70px;
+			left: 30px;
+		}
+		.kiri a{
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			margin-top: 30px;
+			font-size: 20px;
+		}
+		.kiri a::after{
+			content: '';
+			width: 40px;
+			height: 5px;
+			background: #f92537;
+			margin-left: 10px;
+			margin-bottom: 5px;
+		}
+		.kiri a:hover{
+			font-weight: bold;
+		}
+		.content-middle{
+			margin: 28% 40%;
+			width: 100%;
+			position: absolute;
+			left: -30px;
+		}
+		button{
+			width: 180px;
+			padding: 10px 30px; 
+			border-radius: 25px;
+			color: #fff;
+			background: transparent;
+			position: relative;
+			cursor: pointer;
+		} 
+		.content-middle span{
+			width: 100%;
+			height: 100% ;
+			border-radius: 22px;
+			backgroud: red;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+		h1{
+			color: #fff;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+			margin-left: -30px;
+		}
+		</style>
+		<script>
+			var menu1 = document.getElementById("menu30");
+			
+			function openmenu(){
+				menu1.style.top = "10%";
+				menu1.style.transition = "1s";
+			}
+			function closemenu(){
+				menu1.style.top = "-50vh";
+				menu1.style.transition = "1s";
+			}
+			
+		</script>
+		</body>
+	</html>
